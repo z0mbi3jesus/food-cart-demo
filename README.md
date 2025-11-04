@@ -15,13 +15,14 @@ A modern, responsive website template designed specifically for food carts, food
 
 ## 🚀 Quick Start
 
+### For Non-Commercial Use:
 1. **Fork or download** this repository
-2. **Replace placeholder content** with your food cart's information:
-   - Update business name, description, and contact info in `index.html`
-   - Replace placeholder food items with your menu
-   - Add your actual food images to `images/full-size/` and `images/thumbnails/`
-   - Customize colors and fonts in `styles.css`
-3. **Deploy** to your preferred hosting platform (see deployment options below)
+2. **Replace placeholder content** with your information
+3. **Follow attribution requirements** (keep credits)
+4. **Deploy** to your preferred hosting platform
+
+### For Commercial Use:
+**Commercial licensing required** - Contact for pricing and terms.
 
 ## 📁 Project Structure
 
@@ -134,7 +135,28 @@ This template is optimized for mobile devices with:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License**.
+
+### ✅ You CAN:
+- Use this template for **personal projects**
+- Use it for **non-profit organizations**
+- **Study and learn** from the code
+- **Share and modify** with proper attribution
+
+### ❌ You CANNOT:
+- Use this template for **commercial food businesses**
+- **Sell websites** based on this template
+- Use it for **paid client work**
+
+### 💼 Commercial Licensing Available
+For commercial use, including:
+- Food cart/truck businesses
+- Client website development
+- Resale or white-label services
+
+**Contact for commercial licensing**: [Add your email/contact info]
+
+*Free demo showcases the quality and features available in the commercial license.*
 
 ## 🆘 Support
 
