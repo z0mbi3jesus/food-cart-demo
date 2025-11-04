@@ -1,0 +1,32 @@
+# GitLab Pages deployment configuration
+image: alpine:latest
+
+pages:
+  stage: deploy
+  script:
+    - echo "Deploying static site..."
+    - mkdir public
+    - cp -r * public/ 2>/dev/null || true
+    - rm -rf public/.git* public/public 2>/dev/null || true
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+# Alternative: Deploy from any branch to staging
+pages:staging:
+  stage: deploy
+  script:
+    - echo "Deploying to staging..."
+    - mkdir public
+    - cp -r * public/ 2>/dev/null || true
+    - rm -rf public/.git* public/public 2>/dev/null || true
+  artifacts:
+    paths:
+      - public
+  environment:
+    name: staging
+    url: https://$CI_PROJECT_NAMESPACE.gitlab.io/-/$CI_PROJECT_NAME/-/jobs/$CI_JOB_ID/artifacts/public/index.html
+  rules:
+    - if: $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
