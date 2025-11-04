@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>[YOUR BUSINESS NAME] - [CUISINE TYPE] Food Cart | [KEY DISHES]</title>
+    <meta name="title" content="[YOUR BUSINESS NAME] - [CUISINE TYPE] Food Cart | [KEY DISHES]">
+    <meta name="description" content="[DESCRIBE YOUR FOOD CART - cuisine type, signature dishes, location/hours]">
+    <meta name="keywords" content="[food cart, cuisine type, signature dishes, location keywords]">
+    <meta name="author" content="[YOUR BUSINESS NAME]">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="restaurant">
+    <meta property="og:url" content="https://[YOUR-DOMAIN].com/">
+    <meta property="og:title" content="[YOUR BUSINESS NAME] - [CUISINE TYPE] Food Cart">
+    <meta property="og:description" content="[BRIEF DESCRIPTION OF YOUR FOOD CART]">
+    <meta property="og:image" content="https://[YOUR-DOMAIN].com/images/og-image.jpg">
+    <meta property="og:site_name" content="[YOUR BUSINESS NAME]">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://[YOUR-DOMAIN].com/">
+    <meta property="twitter:title" content="[YOUR BUSINESS NAME] - [CUISINE TYPE] Food Cart">
+    <meta property="twitter:description" content="[BRIEF DESCRIPTION OF YOUR FOOD CART]">
+    <meta property="twitter:image" content="https://[YOUR-DOMAIN].com/images/twitter-card.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://[YOUR-DOMAIN].com/">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "[YOUR BUSINESS NAME]",
+        "description": "[DESCRIPTION OF YOUR FOOD CART/CUISINE]",
+        "url": "https://[YOUR-DOMAIN].com",
+        "telephone": "[YOUR PHONE NUMBER]",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "[YOUR ADDRESS]",
+            "addressLocality": "[CITY]",
+            "addressRegion": "[STATE]",
+            "postalCode": "[ZIP CODE]",
+            "addressCountry": "US"
+        },
+        "openingHours": "[YOUR HOURS - e.g., Mo-Su 11:00-21:00]",
+        "priceRange": "[PRICE RANGE - e.g., $5-15]",
+        "servesCuisine": ["[CUISINE TYPE]", "[CUISINE CATEGORY]"],
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Cash, Credit Card",
+        "image": "https://[YOUR-DOMAIN].com/images/restaurant-exterior.jpg",
+        "hasMenu": {
+            "@type": "Menu",
+            "hasMenuSection": {
+                "@type": "MenuSection",
+                "name": "[MENU SECTION NAME]",
+                "hasMenuItem": [
+                    {
+                        "@type": "MenuItem",
+                        "name": "[SAMPLE MENU ITEM 1]",
+                        "description": "[ITEM DESCRIPTION]",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "[PRICE]",
+                            "priceCurrency": "USD"
+                        }
+                    },
+                    {
+                        "@type": "MenuItem",
+                        "name": "[SAMPLE MENU ITEM 2]",
+                        "description": "[ITEM DESCRIPTION]",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "[PRICE]",
+                            "priceCurrency": "USD"
+                        }
+                    }
+                ]
+            }
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "50"
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Cookie Consent Styles -->
+    <style>
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(
+                135deg, 
+                rgba(45, 24, 16, 0.98) 0%, 
+                rgba(33, 18, 12, 0.95) 100%
+            );
+            color: white;
+            padding: 25px;
+            z-index: 10000;
+            transform: translateY(100%);
+            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            backdrop-filter: blur(15px);
+            border-top: 3px solid rgba(255, 140, 66, 0.6);
+            box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+        
+        .cookie-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .cookie-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .cookie-btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        
+        .cookie-btn.accept {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+        }
+        
+        .cookie-btn.accept:hover {
+            background: linear-gradient(135deg, #20c997, #17a2b8);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+        }
+        
+        .cookie-btn.decline {
+            background: #6c757d;
+            color: white;
+        }
+        
+        .cookie-btn.decline:hover {
+            background: #545b62;
+        }
+        
+        .cookie-btn.customize {
+            background: transparent;
+            color: #fff;
+            border: 1px solid #8B4513;
+        }
+        
+        .cookie-btn.customize:hover {
+            background: #8B4513;
+        }
+        
+        .cookie-link {
+            color: #ffd700;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .cookie-link:hover {
+            color: #ffeb3b;
+            border-bottom-color: #ffeb3b;
+            text-shadow: 0 0 5px rgba(255, 235, 59, 0.5);
+        }
+        
+        @media (max-width: 768px) {
+            .cookie-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .cookie-buttons {
+                justify-content: center;
+            }
+        }
+        
+        .privacy-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 10001;
+            backdrop-filter: blur(5px);
+        }
+        
+        .privacy-modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .privacy-content {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            margin: 20px;
+            position: relative;
+        }
+        
+        .privacy-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        .toggle-switch {
+            position: relative;
+            width: 50px;
+            height: 24px;
+            background: #ccc;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background 0.3s;
+            display: inline-block;
+        }
+        
+        .toggle-switch.active {
+            background: #28a745;
+        }
+        
+        .toggle-slider {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+        
+        .toggle-switch.active .toggle-slider {
+            transform: translateX(26px);
+        }
+        
+        .cookie-category {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+        
+        .category-header {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Parallax Background -->
+    <div class="parallax-bg">
+        <div class="parallax-layer"></div>
+        <div class="parallax-layer"></div>
+        <div class="parallax-layer"></div>
+        <div class="parallax-layer"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">[YOUR BUSINESS NAME]</h1>
+            <p class="tagline">[YOUR TAGLINE/SLOGAN]</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="intro" aria-label="Restaurant Introduction">
+                <h2>Welcome to [YOUR BUSINESS NAME] - [DESCRIPTION OF YOUR FOOD CART]</h2>
+                <p>[DESCRIBE YOUR FOOD CART - What type of cuisine do you serve? What makes you special? Where are you located? What should customers expect?] Hover over our menu items to explore our signature dishes.</p>
+            </section>
+
+            <section class="menu-grid" aria-label="Food Menu">
+                <h2 class="visually-hidden">Our Menu</h2>
+                <div class="menu-item" data-title="Grilled Steak" data-description="Premium ribeye steak grilled to perfection with seasoned vegetables" data-price="$24" data-thumb="" data-full="">
+                    <div class="placeholder-image steak-placeholder">
+                        <span class="placeholder-text">🥩<br>STEAK</span>
+                    </div>
+                    <div class="menu-overlay">
+                        <div class="placeholder-image steak-placeholder large">
+                            <span class="placeholder-text">🥩<br>GRILLED STEAK</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3 class="menu-title">Grilled Steak</h3>
+                            <p class="menu-description">Premium ribeye steak grilled to perfection with seasoned vegetables</p>
+                            <span class="menu-price">$24</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-title="BBQ Burger" data-description="Juicy beef patty with BBQ sauce, cheese, and crispy onions" data-price="$16" data-thumb="" data-full="">
+                    <div class="placeholder-image burger-placeholder">
+                        <span class="placeholder-text">🍔<br>BURGER</span>
+                    </div>
+                    <div class="menu-overlay">
+                        <div class="placeholder-image burger-placeholder large">
+                            <span class="placeholder-text">🍔<br>BBQ BURGER</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3 class="menu-title">BBQ Burger</h3>
+                            <p class="menu-description">Juicy beef patty with BBQ sauce, cheese, and crispy onions</p>
+                            <span class="menu-price">$16</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-title="Seafood Platter" data-description="Fresh catch of the day with grilled shrimp and lobster tail" data-price="$32" data-thumb="" data-full="">
+                    <div class="placeholder-image seafood-placeholder">
+                        <span class="placeholder-text">🦞<br>SEAFOOD</span>
+                    </div>
+                    <div class="menu-overlay">
+                        <div class="placeholder-image seafood-placeholder large">
+                            <span class="placeholder-text">🦞<br>SEAFOOD PLATTER</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3 class="menu-title">Seafood Platter</h3>
+                            <p class="menu-description">Fresh catch of the day with grilled shrimp and lobster tail</p>
+                            <span class="menu-price">$32</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-title="BBQ Ribs" data-description="Slow-cooked baby back ribs with smoky BBQ glaze" data-price="$28" data-thumb="" data-full="">
+                    <div class="placeholder-image ribs-placeholder">
+                        <span class="placeholder-text">🍖<br>RIBS</span>
+                    </div>
+                    <div class="menu-overlay">
+                        <div class="placeholder-image ribs-placeholder large">
+                            <span class="placeholder-text">🍖<br>BBQ RIBS</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3 class="menu-title">BBQ Ribs</h3>
+                            <p class="menu-description">Slow-cooked baby back ribs with smoky BBQ glaze</p>
+                            <span class="menu-price">$28</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-title="Chicken Wings" data-description="Crispy wings tossed in your choice of hot or BBQ sauce" data-price="$14" data-thumb="" data-full="">
+                    <div class="placeholder-image wings-placeholder">
+                        <span class="placeholder-text">🍗<br>WINGS</span>
+                    </div>
+                    <div class="menu-overlay">
+                        <div class="placeholder-image wings-placeholder large">
+                            <span class="placeholder-text">🍗<br>CHICKEN WINGS</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3 class="menu-title">Chicken Wings</h3>
+                            <p class="menu-description">Crispy wings tossed in your choice of hot or BBQ sauce</p>
+                            <span class="menu-price">$14</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-title="Grilled Salmon" data-description="Atlantic salmon fillet with lemon herb seasoning" data-price="$22" data-thumb="" data-full="">
+                    <div class="placeholder-image salmon-placeholder">
+                        <span class="placeholder-text">🐟<br>SALMON</span>
+                    </div>
+                    <div class="menu-overlay">
+                        <div class="placeholder-image salmon-placeholder large">
+                            <span class="placeholder-text">🐟<br>GRILLED SALMON</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3 class="menu-title">Grilled Salmon</h3>
+                            <p class="menu-description">Atlantic salmon fillet with lemon herb seasoning</p>
+                            <span class="menu-price">$22</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more menu items as needed by copying the structure above -->
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <address>
+                <h3>Visit [YOUR BUSINESS NAME]</h3>
+                <p><strong>Address:</strong> [YOUR ADDRESS]<br>
+                <strong>Phone:</strong> <a href="tel:+1[YOUR-PHONE-NUMBER]">[YOUR PHONE NUMBER]</a><br>
+                <strong>Hours:</strong> <time>[YOUR HOURS]</time></p>
+            </address>
+            
+            <div class="restaurant-info">
+                <h3>About Our [CUISINE TYPE] Cuisine</h3>
+                <p>[YOUR BUSINESS NAME] specializes in [DESCRIPTION OF YOUR CUISINE/SPECIALTY]. [ADD DETAILS ABOUT YOUR COOKING STYLE, INGREDIENTS, OR WHAT MAKES YOU SPECIAL].</p>
+            </div>
+            
+            <div class="keywords-footer">
+                <p><strong>Specialties:</strong> [LIST YOUR SIGNATURE DISHES AND SPECIALTIES]</p>
+            </div>
+            
+            <p class="copyright">&copy; 2024 [YOUR BUSINESS NAME]. All rights reserved. | <a href="#" onclick="showPrivacyModal()">Privacy Policy</a> | <a href="#" onclick="showCookieSettings()">Cookie Settings</a> | <a href="#contact">Contact Us</a></p>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h3>🍪 We Value Your Privacy</h3>
+                <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. <a href="#" class="cookie-link" onclick="showPrivacyModal()">Learn more</a></p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn accept" onclick="acceptAllCookies()">Accept All</button>
+                <button class="cookie-btn decline" onclick="declineAllCookies()">Decline All</button>
+                <button class="cookie-btn customize" onclick="showCookieSettings()">Customize</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="privacy-modal">
+        <div class="privacy-content">
+            <button class="privacy-close" onclick="closePrivacyModal()">&times;</button>
+            <h2>Privacy Policy</h2>
+            <p><strong>Last updated:</strong> [UPDATE DATE]</p>
+            
+            <h3>Information We Collect</h3>
+            <p>We collect information to provide better services to our users. This may include:</p>
+            <ul>
+                <li><strong>Personal Information:</strong> Name, email, phone number when you contact us</li>
+                <li><strong>Usage Data:</strong> How you interact with our website</li>
+                <li><strong>Device Information:</strong> Browser type, IP address, device identifiers</li>
+            </ul>
+
+            <h3>How We Use Cookies</h3>
+            <p>We use cookies and similar technologies to:</p>
+            <ul>
+                <li>Remember your preferences and settings</li>
+                <li>Understand how you use our website</li>
+                <li>Improve our services and user experience</li>
+                <li>Provide relevant content and advertisements</li>
+            </ul>
+
+            <h3>Your Rights</h3>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access your personal data</li>
+                <li>Correct inaccurate data</li>
+                <li>Request deletion of your data</li>
+                <li>Object to data processing</li>
+                <li>Data portability</li>
+            </ul>
+
+            <h3>Contact Us</h3>
+            <p>If you have questions about this Privacy Policy, please contact us at:</p>
+            <p><strong>Email:</strong> [YOUR EMAIL]<br>
+            <strong>Phone:</strong> [YOUR PHONE NUMBER]<br>
+            <strong>Address:</strong> [YOUR ADDRESS]</p>
+
+            <button class="cookie-btn accept" onclick="closePrivacyModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- Cookie Settings Modal -->
+    <div id="cookieSettings" class="privacy-modal">
+        <div class="privacy-content">
+            <button class="privacy-close" onclick="closeCookieSettings()">&times;</button>
+            <h2>Cookie Settings</h2>
+            <p>Manage your cookie preferences below. Essential cookies cannot be disabled as they are necessary for the website to function.</p>
+            
+            <div class="cookie-category">
+                <div class="category-header">
+                    <div>
+                        <h4>Essential Cookies</h4>
+                        <p>Required for basic website functionality</p>
+                    </div>
+                    <div class="toggle-switch active">
+                        <div class="toggle-slider"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cookie-category">
+                <div class="category-header">
+                    <div>
+                        <h4>Analytics Cookies</h4>
+                        <p>Help us understand how visitors use our website</p>
+                    </div>
+                    <div class="toggle-switch" id="analyticsCookies" onclick="toggleCookie('analytics')">
+                        <div class="toggle-slider"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cookie-category">
+                <div class="category-header">
+                    <div>
+                        <h4>Marketing Cookies</h4>
+                        <p>Used to deliver relevant advertisements</p>
+                    </div>
+                    <div class="toggle-switch" id="marketingCookies" onclick="toggleCookie('marketing')">
+                        <div class="toggle-slider"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px; text-align: center;">
+                <button class="cookie-btn accept" onclick="saveCustomCookies()">Save Settings</button>
+                <button class="cookie-btn decline" onclick="closeCookieSettings()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Cookie Consent Management
+        const COOKIE_CONSENT_KEY = 'cookieConsent';
+        const COOKIE_EXPIRY_DAYS = 365;
+
+        // Check if user has already made a choice
+        function checkCookieConsent() {
+            const consent = localStorage.getItem(COOKIE_CONSENT_KEY);
+            if (!consent) {
+                setTimeout(() => {
+                    document.getElementById('cookieBanner').classList.add('show');
+                }, 2000); // Show after 2 seconds
+            } else {
+                const consentData = JSON.parse(consent);
+                applyCookieSettings(consentData);
+            }
+        }
+
+        function acceptAllCookies() {
+            const consentData = {
+                essential: true,
+                analytics: true,
+                marketing: true,
+                timestamp: Date.now()
+            };
+            saveConsentData(consentData);
+            hideCookieBanner();
+            applyCookieSettings(consentData);
+        }
+
+        function declineAllCookies() {
+            const consentData = {
+                essential: true,
+                analytics: false,
+                marketing: false,
+                timestamp: Date.now()
+            };
+            saveConsentData(consentData);
+            hideCookieBanner();
+            applyCookieSettings(consentData);
+        }
+
+        function saveCustomCookies() {
+            const analyticsToggle = document.getElementById('analyticsCookies');
+            const marketingToggle = document.getElementById('marketingCookies');
+            
+            const consentData = {
+                essential: true,
+                analytics: analyticsToggle.classList.contains('active'),
+                marketing: marketingToggle.classList.contains('active'),
+                timestamp: Date.now()
+            };
+            
+            saveConsentData(consentData);
+            closeCookieSettings();
+            hideCookieBanner();
+            applyCookieSettings(consentData);
+        }
+
+        function saveConsentData(data) {
+            localStorage.setItem(COOKIE_CONSENT_KEY, JSON.stringify(data));
+            
+            // Set cookie for server-side access (optional)
+            const expiry = new Date();
+            expiry.setTime(expiry.getTime() + (COOKIE_EXPIRY_DAYS * 24 * 60 * 60 * 1000));
+            document.cookie = `${COOKIE_CONSENT_KEY}=${JSON.stringify(data)}; expires=${expiry.toUTCString()}; path=/; SameSite=Strict`;
+        }
+
+        function applyCookieSettings(consentData) {
+            if (consentData.analytics) {
+                // Initialize analytics (Google Analytics, etc.)
+                console.log('Analytics cookies enabled');
+                // Example: gtag('config', 'GA_MEASUREMENT_ID');
+            }
+            
+            if (consentData.marketing) {
+                // Initialize marketing cookies (Facebook Pixel, etc.)
+                console.log('Marketing cookies enabled');
+            }
+        }
+
+        function hideCookieBanner() {
+            document.getElementById('cookieBanner').classList.remove('show');
+        }
+
+        function showPrivacyModal() {
+            document.getElementById('privacyModal').classList.add('show');
+        }
+
+        function closePrivacyModal() {
+            document.getElementById('privacyModal').classList.remove('show');
+        }
+
+        function showCookieSettings() {
+            const consent = localStorage.getItem(COOKIE_CONSENT_KEY);
+            if (consent) {
+                const consentData = JSON.parse(consent);
+                updateCookieToggles(consentData);
+            }
+            document.getElementById('cookieSettings').classList.add('show');
+        }
+
+        function closeCookieSettings() {
+            document.getElementById('cookieSettings').classList.remove('show');
+        }
+
+        function toggleCookie(type) {
+            const toggle = document.getElementById(type + 'Cookies');
+            toggle.classList.toggle('active');
+        }
+
+        function updateCookieToggles(consentData) {
+            const analyticsToggle = document.getElementById('analyticsCookies');
+            const marketingToggle = document.getElementById('marketingCookies');
+            
+            if (consentData.analytics) {
+                analyticsToggle.classList.add('active');
+            } else {
+                analyticsToggle.classList.remove('active');
+            }
+            
+            if (consentData.marketing) {
+                marketingToggle.classList.add('active');
+            } else {
+                marketingToggle.classList.remove('active');
+            }
+        }
+
+        // Initialize cookie consent check when page loads
+        document.addEventListener('DOMContentLoaded', checkCookieConsent);
+
+        // Close modals when clicking outside
+        window.onclick = function(event) {
+            const privacyModal = document.getElementById('privacyModal');
+            const cookieSettings = document.getElementById('cookieSettings');
+            
+            if (event.target === privacyModal) {
+                closePrivacyModal();
+            }
+            if (event.target === cookieSettings) {
+                closeCookieSettings();
+            }
+        }
+    </script>
+</body>
+</html>

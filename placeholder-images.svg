@@ -1,0 +1,70 @@
+<!-- This file contains SVG placeholder images for the food cart template -->
+<!-- You can use these as temporary placeholders until you add your own food photos -->
+
+<!-- Steak Placeholder -->
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#8B4513"/>
+  <circle cx="150" cy="150" r="120" fill="#A0522D" stroke="#654321" stroke-width="4"/>
+  <circle cx="150" cy="150" r="100" fill="#CD853F"/>
+  <circle cx="150" cy="150" r="80" fill="#DEB887"/>
+  <text x="150" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#654321">STEAK</text>
+</svg>
+
+<!-- Burger Placeholder -->
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#90EE90"/>
+  <ellipse cx="150" cy="100" rx="100" ry="30" fill="#DEB887"/>
+  <rect x="50" y="120" width="200" height="20" fill="#228B22"/>
+  <rect x="50" y="140" width="200" height="30" fill="#8B4513"/>
+  <rect x="50" y="170" width="200" height="20" fill="#FFD700"/>
+  <ellipse cx="150" cy="210" rx="100" ry="30" fill="#DEB887"/>
+  <text x="150" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#654321">BURGER</text>
+</svg>
+
+<!-- Seafood Platter Placeholder -->
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#87CEEB"/>
+  <circle cx="120" cy="120" r="40" fill="#FF6347"/>
+  <circle cx="180" cy="120" r="35" fill="#FFA500"/>
+  <ellipse cx="150" cy="200" rx="60" ry="30" fill="#20B2AA"/>
+  <circle cx="80" cy="180" r="25" fill="#FF69B4"/>
+  <circle cx="220" cy="180" r="25" fill="#32CD32"/>
+  <text x="150" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#483D8B">SEAFOOD</text>
+</svg>
+
+<!-- BBQ Ribs Placeholder -->
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#8B4513"/>
+  <rect x="50" y="100" width="200" height="40" rx="20" fill="#A0522D"/>
+  <rect x="50" y="150" width="200" height="40" rx="20" fill="#8B4513"/>
+  <rect x="50" y="200" width="200" height="40" rx="20" fill="#654321"/>
+  <circle cx="80" cy="120" r="8" fill="#FFFFFF"/>
+  <circle cx="120" cy="120" r="8" fill="#FFFFFF"/>
+  <circle cx="160" cy="120" r="8" fill="#FFFFFF"/>
+  <circle cx="200" cy="120" r="8" fill="#FFFFFF"/>
+  <text x="150" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#DEB887">BBQ RIBS</text>
+</svg>
+
+<!-- Chicken Wings Placeholder -->
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#FF4500"/>
+  <ellipse cx="100" cy="130" rx="40" ry="60" fill="#DEB887" transform="rotate(-20 100 130)"/>
+  <ellipse cx="200" cy="130" rx="40" ry="60" fill="#DEB887" transform="rotate(20 200 130)"/>
+  <ellipse cx="150" cy="200" rx="35" ry="50" fill="#DEB887"/>
+  <circle cx="90" cy="110" r="10" fill="#8B4513"/>
+  <circle cx="210" cy="110" r="10" fill="#8B4513"/>
+  <circle cx="150" cy="180" r="10" fill="#8B4513"/>
+  <text x="150" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#8B0000">WINGS</text>
+</svg>
+
+<!-- Pizza Slice Placeholder -->
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#FFE4B5"/>
+  <path d="M 150 50 L 250 250 L 50 250 Z" fill="#DEB887"/>
+  <path d="M 150 70 L 230 230 L 70 230 Z" fill="#FF6347"/>
+  <circle cx="120" cy="160" r="15" fill="#8B0000"/>
+  <circle cx="180" cy="180" r="15" fill="#8B0000"/>
+  <circle cx="140" cy="200" r="12" fill="#32CD32"/>
+  <circle cx="160" cy="140" r="12" fill="#FFD700"/>
+  <text x="150" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#8B4513">PIZZA</text>
+</svg>

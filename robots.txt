@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://moonpocha.com/sitemap.xml
+
+# Block common bot attacks
+User-agent: BadBot
+Disallow: /
+
+# Allow social media bots
+User-agent: facebookexternalhit/*
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Optimize crawl rate
+Crawl-delay: 1
