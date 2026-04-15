@@ -1,6 +1,6 @@
 # Food Cart Website Template
 
-## 🎯 Overview
+##  Overview
 This is a customizable template for food cart/restaurant websites. It features:
 - Responsive design with hover effects
 - Image gallery with lightbox-style overlays
@@ -9,7 +9,7 @@ This is a customizable template for food cart/restaurant websites. It features:
 - JSON-LD structured data for search engines
 - Parallax floating image backgrounds
 
-## 🛠️ How to Customize This Template
+##  How to Customize This Template
 
 ### 1. Basic Information
 Edit these files to customize for your food cart:
@@ -65,7 +65,7 @@ Each menu item in HTML follows this structure:
 - **Fonts**: Modify Google Fonts imports in HTML head
 - **Logo**: Style the `.logo` class for your brand
 
-### 6. Privacy & Cookie Compliance 🍪
+### 6. Privacy & Cookie Compliance 
 The template includes modern privacy compliance features:
 
 #### Cookie Consent System:
@@ -92,7 +92,7 @@ Update all absolute URLs throughout the code:
 - JSON-LD structured data
 - Image paths in meta tags
 
-## 📁 Template Structure
+##  Template Structure
 ```
 /
 ├── index.html              # Main page
@@ -109,7 +109,7 @@ Update all absolute URLs throughout the code:
     └── full-size/         # Large menu images
 ```
 
-## 🚀 Quick Start Steps
+##  Quick Start Steps
 1. Replace all instances of "Moon Pocha" with your business name
 2. Update contact information and hours
 3. Replace menu items with your actual menu
@@ -118,7 +118,7 @@ Update all absolute URLs throughout the code:
 6. Customize colors and fonts in CSS
 7. Test the website and deploy
 
-## 📋 Checklist
+##  Checklist
 - [ ] Business name updated everywhere
 - [ ] Contact info updated (phone, address, hours)
 - [ ] Menu items replaced with your items
@@ -129,7 +129,7 @@ Update all absolute URLs throughout the code:
 - [ ] JSON-LD structured data updated
 - [ ] Site tested on mobile and desktop
 
-## 💡 Features Included
+##  Features Included
 - Mobile-responsive design
 - Interactive hover effects on menu items
 - Parallax floating background images
@@ -137,7 +137,7 @@ Update all absolute URLs throughout the code:
 - Social media sharing optimization
 - Accessibility features (alt tags, ARIA labels)
 - Performance optimizations
-- **🍪 GDPR/CCPA compliant cookie consent system**
-- **⚖️ Privacy policy modal and dedicated cookie policy page**
-- **🔐 Granular cookie controls (Essential, Analytics, Marketing)**
-- **📋 Modern privacy compliance with user consent management**
+- ** GDPR/CCPA compliant cookie consent system**
+- ** Privacy policy modal and dedicated cookie policy page**
+- ** Granular cookie controls (Essential, Analytics, Marketing)**
+- ** Modern privacy compliance with user consent management**

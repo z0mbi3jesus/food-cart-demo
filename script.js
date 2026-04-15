@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 placeholder.className = 'image-placeholder';
                 placeholder.innerHTML = `
                     <div class="placeholder-content">
-                        <span class="placeholder-icon">🍽️</span>
+                        <span class="placeholder-icon"></span>
                         <span class="placeholder-text">${title}</span>
                     </div>
                 `;

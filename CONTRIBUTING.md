@@ -1,31 +1,31 @@
-# 🏗️ Repository Structure & Contribution Guide
+#  Repository Structure & Contribution Guide
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 food-cart-demo/
-├── 📄 index.html              # Main website file
-├── 🎨 styles.css              # All styling and animations
-├── ⚡ script.js               # Interactive functionality
-├── 🔒 cookie-policy.html      # Privacy compliance page
-├── 📱 site.webmanifest       # PWA configuration
-├── 🗺️ sitemap.xml            # SEO sitemap
-├── 🤖 robots.txt             # Search engine guidelines
-├── 📋 SEO-CHECKLIST.md       # SEO optimization guide
-├── 📖 TEMPLATE-README.md     # Template customization guide
-├── ✅ CUSTOMIZATION-CHECKLIST.md  # Step-by-step customization
-├── 🖼️ IMAGE-REQUIREMENTS.md  # Image guidelines
-├── 🚀 DEPLOYMENT.md          # Hosting instructions
-├── 📜 LICENSE                # MIT License
-├── ⚙️ netlify.toml           # Netlify configuration
-├── ⚙️ vercel.json            # Vercel configuration
-├── ⚙️ .gitlab-ci.yml         # GitLab Pages configuration
-└── 🖼️ images/
+├──  index.html              # Main website file
+├──  styles.css              # All styling and animations
+├──  script.js               # Interactive functionality
+├──  cookie-policy.html      # Privacy compliance page
+├──  site.webmanifest       # PWA configuration
+├──  sitemap.xml            # SEO sitemap
+├──  robots.txt             # Search engine guidelines
+├──  SEO-CHECKLIST.md       # SEO optimization guide
+├──  TEMPLATE-README.md     # Template customization guide
+├──  CUSTOMIZATION-CHECKLIST.md  # Step-by-step customization
+├──  IMAGE-REQUIREMENTS.md  # Image guidelines
+├──  DEPLOYMENT.md          # Hosting instructions
+├──  LICENSE                # MIT License
+├──  netlify.toml           # Netlify configuration
+├──  vercel.json            # Vercel configuration
+├──  .gitlab-ci.yml         # GitLab Pages configuration
+└──  images/
     ├── full-size/            # High-resolution food images
     └── thumbnails/           # Optimized preview images
 ```
 
-## 🎯 Core Files Explained
+##  Core Files Explained
 
 ### Essential Files
 - **`index.html`**: The main website with responsive design, cookie compliance, and placeholder content
@@ -46,7 +46,7 @@ food-cart-demo/
 - **`.gitlab-ci.yml`**: GitLab Pages CI/CD pipeline configuration
 - **`site.webmanifest`**: PWA configuration for mobile app-like experience
 
-## 🤝 Contributing Guidelines
+##  Contributing Guidelines
 
 ### For Template Users
 1. **Fork the repository** to create your own food cart website
@@ -61,7 +61,7 @@ food-cart-demo/
 4. **Update documentation** when adding features
 5. **Follow coding standards** established in the project
 
-## 🔧 Development Standards
+##  Development Standards
 
 ### Code Organization
 - **CSS**: Use custom properties for consistent theming
@@ -79,7 +79,7 @@ food-cart-demo/
 - **Keyboard Navigation**: Ensure all interactive elements are accessible
 - **Screen Readers**: Provide meaningful alt text and ARIA labels
 
-## 🚀 GitHub Pages Setup
+##  GitHub Pages Setup
 
 ### For Demo/Showcase
 1. **Repository Settings** → Pages
@@ -92,7 +92,7 @@ food-cart-demo/
 2. Configure DNS settings with your provider
 3. Enable "Enforce HTTPS" in repository settings
 
-## 📝 Issue Templates
+##  Issue Templates
 
 ### Bug Reports
 - Describe the issue clearly
@@ -112,7 +112,7 @@ food-cart-demo/
 - Consider beginner perspective
 - Test instructions before submitting
 
-## 🎨 Design Philosophy
+##  Design Philosophy
 
 ### Template Goals
 - **Simplicity**: Easy to customize without deep technical knowledge
@@ -126,7 +126,7 @@ food-cart-demo/
 - **Flexible**: Easy to adapt for different food types and branding
 - **Mobile-First**: Optimized for smartphone users
 
-## 🔄 Update Process
+##  Update Process
 
 ### Version Management
 - **Major**: Breaking changes requiring user action
@@ -139,7 +139,7 @@ food-cart-demo/
 - Highlight new features and improvements
 - Include contributor acknowledgments
 
-## 🏆 Recognition
+##  Recognition
 
 ### Contributors
 All contributors will be acknowledged in:
@@ -153,7 +153,7 @@ Exceptional implementations may be featured in:
 - Community examples
 - Social media highlights
 
-## 📞 Support Channels
+##  Support Channels
 
 ### For Users
 - **GitHub Issues**: Bug reports and feature requests
@@ -167,4 +167,4 @@ Exceptional implementations may be featured in:
 
 ---
 
-**Thank you for contributing to making food cart websites accessible and beautiful! 🍔✨**
+**Thank you for contributing to making food cart websites accessible and beautiful! **

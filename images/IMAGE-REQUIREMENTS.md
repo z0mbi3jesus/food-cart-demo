@@ -1,6 +1,6 @@
 # Image Requirements for Your Food Cart Template
 
-## 📁 Folder Structure
+##  Folder Structure
 You need to add images to these two folders:
 
 ### Thumbnails Folder (`images/thumbnails/`)
@@ -15,7 +15,7 @@ You need to add images to these two folders:
 - **File Format**: JPG or PNG
 - **File Names**: Must match what you set in your HTML menu items
 
-## 🖼️ Required Images
+##  Required Images
 Based on the template structure, you need 6 pairs of images:
 
 1. `item1.jpg` (both in thumbnails/ and full-size/)
@@ -25,21 +25,21 @@ Based on the template structure, you need 6 pairs of images:
 5. `item5.jpg` (both in thumbnails/ and full-size/)
 6. `item6.jpg` (both in thumbnails/ and full-size/)
 
-## ✏️ Customizing File Names
+##  Customizing File Names
 You can use any file names you want, but make sure to:
 
 1. **Update HTML**: Change the `data-thumb` and `data-full` attributes in each menu item
 2. **Update JavaScript**: Change the `availableImages` array in `script.js`
 3. **Keep Names Consistent**: Thumbnail and full-size versions should have the same name
 
-## 💡 Image Tips
+##  Image Tips
 - Use high-quality, appetizing photos of your food
 - Ensure good lighting and professional appearance
 - Keep file sizes reasonable for web performance (under 1MB each)
 - Consider using the same aspect ratio for consistency
 - Make sure images represent your actual menu items
 
-## 🔄 Adding More Menu Items
+##  Adding More Menu Items
 To add more than 6 menu items:
 1. Add more menu item HTML blocks in `index.html`
 2. Add corresponding image files

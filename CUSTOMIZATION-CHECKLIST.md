@@ -1,6 +1,6 @@
 # Food Cart Template Customization Checklist
 
-## ✅ Essential Customizations (Must Do)
+##  Essential Customizations (Must Do)
 
 ### 1. Business Information
 - [ ] Replace `[YOUR BUSINESS NAME]` with your food cart name (appears ~15 times)
@@ -29,7 +29,7 @@
 - [ ] Make sure image file names match what's referenced in HTML
 - [ ] Add your business logo/icon files for the web app manifest
 
-## ⚙️ Technical Customizations
+##  Technical Customizations
 
 ### 5. SEO & Meta Tags
 - [ ] Update meta description for search engines
@@ -44,7 +44,7 @@
 - [ ] Update `robots.txt` if needed for SEO
 - [ ] Update `sitemap.xml` with your actual domain
 
-### 7. Privacy & Cookie Compliance ⚖️
+### 7. Privacy & Cookie Compliance 
 - [ ] Update privacy policy content in the modal (index.html)
 - [ ] Update cookie policy page (`cookie-policy.html`) with your information
 - [ ] Replace `[YOUR EMAIL]` in privacy sections
@@ -53,7 +53,7 @@
 - [ ] Test cookie consent banner functionality
 - [ ] Verify GDPR/CCPA compliance for your jurisdiction
 
-## 🎨 Optional Customizations
+##  Optional Customizations
 
 ### 7. Styling & Branding
 - [ ] Customize colors in `styles.css` to match your brand
@@ -68,7 +68,7 @@
 - [ ] Add customer reviews section
 - [ ] Add photo gallery or Instagram feed
 
-## 🔧 Final Steps
+##  Final Steps
 
 ### 9. Testing & Launch
 - [ ] Test website on mobile devices
@@ -91,14 +91,14 @@
 - [ ] Remove `TEMPLATE-README.md` and this checklist file
 - [ ] Keep only the files you need for your final website
 
-## 📝 Notes
+##  Notes
 - Keep the original file structure intact
 - The template is mobile-responsive, so test on various devices
 - The parallax background effect will use your menu images automatically
 - All placeholder text is marked with `[BRACKETS]` for easy finding
 - Use Find & Replace in your editor to quickly update common elements
 
-## 🆘 Need Help?
+##  Need Help?
 - Check the `TEMPLATE-README.md` for detailed instructions
 - Each section with `[BRACKETS]` needs to be replaced
 - Keep the HTML structure the same for best results

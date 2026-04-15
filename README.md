@@ -1,8 +1,8 @@
-# 🍔 Food Cart Template
+#  Food Cart Template
 
 A modern, responsive website template designed specifically for food carts, food trucks, and mobile eateries. Features stunning flame animations, GDPR-compliant cookie management, and a professional design that's ready to customize for any mobile food business.
 
-## ✨ Features
+##  Features
 
 - **Modern Design**: Professional glassmorphism effects with gradient backgrounds
 - **Animated Background**: Subtle CSS flame animations perfect for food businesses
@@ -13,7 +13,7 @@ A modern, responsive website template designed specifically for food carts, food
 - **Performance Focused**: Pure CSS animations, optimized images
 - **Accessibility Ready**: Semantic HTML and proper contrast ratios
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### For Non-Commercial Use:
 1. **Fork or download** this repository
@@ -24,7 +24,7 @@ A modern, responsive website template designed specifically for food carts, food
 ### For Commercial Use:
 **Commercial licensing required** - Contact for pricing and terms.
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 food-cart-demo/
@@ -44,7 +44,7 @@ food-cart-demo/
     └── thumbnails/        # Optimized preview images
 ```
 
-## 🎨 Customization
+##  Customization
 
 ### Quick Customization Checklist
 - [ ] Update business name and tagline in `index.html`
@@ -59,7 +59,7 @@ food-cart-demo/
 ### Detailed Customization
 See `CUSTOMIZATION-CHECKLIST.md` for step-by-step instructions on personalizing every aspect of the template.
 
-## 🔧 Development
+##  Development
 
 ### Local Development
 1. Clone the repository
@@ -81,7 +81,7 @@ See `CUSTOMIZATION-CHECKLIST.md` for step-by-step instructions on personalizing 
 - Safari 14+
 - Edge 88+
 
-## 🌐 Deployment Options
+##  Deployment Options
 
 ### Recommended Platforms
 
@@ -118,14 +118,14 @@ This template is optimized for mobile devices with:
 - Fast loading times
 - Offline capability (PWA ready)
 
-## 🛡️ Privacy & Legal
+##  Privacy & Legal
 
 - GDPR/CCPA compliant cookie management
 - Customizable privacy policy
 - Cookie categorization and consent controls
 - Local storage for user preferences
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature-name`
@@ -133,22 +133,22 @@ This template is optimized for mobile devices with:
 4. Push to the branch: `git push origin feature-name`
 5. Submit a pull request
 
-## 📄 License
+##  License
 
 This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License**.
 
-### ✅ You CAN:
+###  You CAN:
 - Use this template for **personal projects**
 - Use it for **non-profit organizations**
 - **Study and learn** from the code
 - **Share and modify** with proper attribution
 
-### ❌ You CANNOT:
+###  You CANNOT:
 - Use this template for **commercial food businesses**
 - **Sell websites** based on this template
 - Use it for **paid client work**
 
-### 💼 Commercial Licensing Available
+###  Commercial Licensing Available
 For commercial use, including:
 - Food cart/truck businesses
 - Client website development
@@ -158,7 +158,7 @@ For commercial use, including:
 
 *Free demo showcases the quality and features available in the commercial license.*
 
-## 🆘 Support
+##  Support
 
 If you encounter any issues or need help customizing the template:
 
@@ -167,7 +167,7 @@ If you encounter any issues or need help customizing the template:
 3. Open an issue in this repository
 4. Join our community discussions
 
-## 🎯 Use Cases
+##  Use Cases
 
 Perfect for:
 - Food trucks and food carts
@@ -178,10 +178,10 @@ Perfect for:
 - Food delivery services
 - Farmers market vendors
 
-## 🏆 Credits
+##  Credits
 
 Built with modern web technologies and best practices. Designed to be accessible, performant, and easy to customize for food service businesses of any size.
 
 ---
 
-**Ready to get started?** Fork this repository and make it your own! 🚀
+**Ready to get started?** Fork this repository and make it your own! 

@@ -333,12 +333,10 @@
             <section class="menu-grid" aria-label="Food Menu">
                 <h2 class="visually-hidden">Our Menu</h2>
                 <div class="menu-item" data-title="Grilled Steak" data-description="Premium ribeye steak grilled to perfection with seasoned vegetables" data-price="$24" data-thumb="" data-full="">
-                    <div class="placeholder-image steak-placeholder">
-                        <span class="placeholder-text">🥩<br>STEAK</span>
-                    </div>
+                    <img src="images/full-size/grilled steak.jpg" alt="Grilled Steak" class="menu-img" loading="lazy">
                     <div class="menu-overlay">
                         <div class="placeholder-image steak-placeholder large">
-                            <span class="placeholder-text">🥩<br>GRILLED STEAK</span>
+                            <span class="placeholder-text"><br>GRILLED STEAK</span>
                         </div>
                         <div class="menu-info">
                             <h3 class="menu-title">Grilled Steak</h3>
@@ -349,12 +347,10 @@
                 </div>
 
                 <div class="menu-item" data-title="BBQ Burger" data-description="Juicy beef patty with BBQ sauce, cheese, and crispy onions" data-price="$16" data-thumb="" data-full="">
-                    <div class="placeholder-image burger-placeholder">
-                        <span class="placeholder-text">🍔<br>BURGER</span>
-                    </div>
+                    <img src="images/full-size/bbq burger.jpg" alt="BBQ Burger" class="menu-img" loading="lazy">
                     <div class="menu-overlay">
                         <div class="placeholder-image burger-placeholder large">
-                            <span class="placeholder-text">🍔<br>BBQ BURGER</span>
+                            <span class="placeholder-text"><br>BBQ BURGER</span>
                         </div>
                         <div class="menu-info">
                             <h3 class="menu-title">BBQ Burger</h3>
@@ -365,12 +361,10 @@
                 </div>
 
                 <div class="menu-item" data-title="Seafood Platter" data-description="Fresh catch of the day with grilled shrimp and lobster tail" data-price="$32" data-thumb="" data-full="">
-                    <div class="placeholder-image seafood-placeholder">
-                        <span class="placeholder-text">🦞<br>SEAFOOD</span>
-                    </div>
+                    <img src="images/full-size/seafood platter.jpg" alt="Seafood Platter" class="menu-img" loading="lazy">
                     <div class="menu-overlay">
                         <div class="placeholder-image seafood-placeholder large">
-                            <span class="placeholder-text">🦞<br>SEAFOOD PLATTER</span>
+                            <span class="placeholder-text"><br>SEAFOOD PLATTER</span>
                         </div>
                         <div class="menu-info">
                             <h3 class="menu-title">Seafood Platter</h3>
@@ -381,12 +375,10 @@
                 </div>
 
                 <div class="menu-item" data-title="BBQ Ribs" data-description="Slow-cooked baby back ribs with smoky BBQ glaze" data-price="$28" data-thumb="" data-full="">
-                    <div class="placeholder-image ribs-placeholder">
-                        <span class="placeholder-text">🍖<br>RIBS</span>
-                    </div>
+                    <img src="images/full-size/bbq ribs.jpg" alt="BBQ Ribs" class="menu-img" loading="lazy">
                     <div class="menu-overlay">
                         <div class="placeholder-image ribs-placeholder large">
-                            <span class="placeholder-text">🍖<br>BBQ RIBS</span>
+                            <span class="placeholder-text"><br>BBQ RIBS</span>
                         </div>
                         <div class="menu-info">
                             <h3 class="menu-title">BBQ Ribs</h3>
@@ -397,12 +389,10 @@
                 </div>
 
                 <div class="menu-item" data-title="Chicken Wings" data-description="Crispy wings tossed in your choice of hot or BBQ sauce" data-price="$14" data-thumb="" data-full="">
-                    <div class="placeholder-image wings-placeholder">
-                        <span class="placeholder-text">🍗<br>WINGS</span>
-                    </div>
+                    <img src="images/full-size/chicken wings.jpg" alt="Chicken Wings" class="menu-img" loading="lazy">
                     <div class="menu-overlay">
                         <div class="placeholder-image wings-placeholder large">
-                            <span class="placeholder-text">🍗<br>CHICKEN WINGS</span>
+                            <span class="placeholder-text"><br>CHICKEN WINGS</span>
                         </div>
                         <div class="menu-info">
                             <h3 class="menu-title">Chicken Wings</h3>
@@ -413,12 +403,21 @@
                 </div>
 
                 <div class="menu-item" data-title="Grilled Salmon" data-description="Atlantic salmon fillet with lemon herb seasoning" data-price="$22" data-thumb="" data-full="">
-                    <div class="placeholder-image salmon-placeholder">
-                        <span class="placeholder-text">🐟<br>SALMON</span>
-                    </div>
+                    <img src="images/full-size/grilled salmon.jpg" alt="Grilled Salmon" class="menu-img" loading="lazy">
+                            <style>
+                            .menu-img {
+                                width: 100%;
+                                max-width: 220px;
+                                max-height: 160px;
+                                object-fit: cover;
+                                border-radius: 12px;
+                                margin-bottom: 12px;
+                                box-shadow: 0 1px 6px rgba(0,0,0,0.10);
+                            }
+                            </style>
                     <div class="menu-overlay">
                         <div class="placeholder-image salmon-placeholder large">
-                            <span class="placeholder-text">🐟<br>GRILLED SALMON</span>
+                            <span class="placeholder-text"><br>GRILLED SALMON</span>
                         </div>
                         <div class="menu-info">
                             <h3 class="menu-title">Grilled Salmon</h3>
@@ -459,7 +458,7 @@
     <div id="cookieBanner" class="cookie-banner">
         <div class="cookie-content">
             <div class="cookie-text">
-                <h3>🍪 We Value Your Privacy</h3>
+                <h3> We Value Your Privacy</h3>
                 <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. <a href="#" class="cookie-link" onclick="showPrivacyModal()">Learn more</a></p>
             </div>
             <div class="cookie-buttons">

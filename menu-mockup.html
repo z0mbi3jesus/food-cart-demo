@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Card Scroll Mockup</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .menu {
+      margin-top: 48px;
+      background: #fffbe8;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 32px 48px;
+      transition: box-shadow 0.3s;
+      cursor: pointer;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      max-width: 420px;
+    }
+    .card-row {
+      display: flex;
+      overflow-x: auto;
+      gap: 32px;
+      padding: 40px 0;
+      width: 100vw;
+      max-width: 900px;
+      justify-content: center;
+      align-items: center;
+      scroll-snap-type: x mandatory;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      margin-top: 32px;
+      transition: opacity 0.5s;
+    }
+    .card {
+      flex: 0 0 220px;
+      height: 320px;
+      perspective: 900px;
+      background: transparent;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: 500;
+      transition: transform 0.3s, box-shadow 0.3s;
+      scroll-snap-align: center;
+      position: relative;
+      cursor: pointer;
+    }
+    .card-inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    .card-inner.flipped {
+      transform: rotateY(180deg);
+    }
+    .card.center {
+      transform: scale(1.12);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+      z-index: 2;
+    }
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #f9f9f9;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-align: center;
+      padding: 16px;
+    }
+    .card-front img {
+      max-width: 90%;
+      max-height: 120px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      object-fit: cover;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.10);
+    }
+    .card.center .card-front {
+      background: #ffe4b5;
+    }
+    .card-back {
+      background: #ffe4b5;
+      transform: rotateY(180deg);
+      font-size: 1rem;
+      color: #333;
+      flex-direction: column;
+    }
+    .hide {
+      display: none;
+    }
+    .hide {
+      display: none;
+    }
+    @media (max-width: 600px) {
+      .card-row {
+        gap: 16px;
+        padding: 24px 0;
+      }
+      .card {
+        flex-basis: 160px;
+        height: 220px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="menu" id="menuView">Today's Menu (Click or Hover)</div>
+  <div class="card-row hide" id="cardRow" style="position:relative;">
+    <div id="scrollLeftZone" style="position:absolute;left:0;top:0;width:48px;height:100%;z-index:10;"></div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/full-size/smashburger.jpg" alt="Smash Burger">
+          Burger
+        </div>
+        <div class="card-back">$8.99<br>Juicy beef patty, cheddar, lettuce, tomato</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <!-- No pizza image yet -->
+          Pizza
+        </div>
+        <div class="card-back">$12.50<br>Wood-fired, mozzarella, basil, tomato sauce</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/full-size/tacos.jpg" alt="Tacos">
+          Tacos
+        </div>
+        <div class="card-back">$7.00<br>3x corn tortillas, chicken, salsa, lime</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <!-- No salad image yet -->
+          Salad
+        </div>
+        <div class="card-back">$6.50<br>Mixed greens, vinaigrette, seasonal veggies</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="images/full-size/loadedfries.jpg" alt="Loaded Fries">
+          Fries
+        </div>
+        <div class="card-back">$3.50<br>Crispy, golden, house seasoning</div>
+      </div>
+    </div>
+    <div id="scrollRightZone" style="position:absolute;right:0;top:0;width:48px;height:100%;z-index:10;"></div>
+  </div>
+  <script>
+    const menuView = document.getElementById('menuView');
+    const cardRow = document.getElementById('cardRow');
+    let menuShown = false;
+
+    // Enable horizontal scroll with mouse wheel
+    cardRow.addEventListener('wheel', function(e) {
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+        e.preventDefault();
+        cardRow.scrollLeft += e.deltaY;
+      }
+    }, { passive: false });
+
+    function showCards() {
+      if (!menuShown) {
+        menuView.classList.add('hide');
+        cardRow.classList.remove('hide');
+        menuShown = true;
+        centerCard();
+      }
+    }
+    menuView.addEventListener('mouseenter', showCards);
+    menuView.addEventListener('click', showCards);
+
+    // Desktop: scroll on edge hover
+    let scrollInterval = null;
+    const scrollSpeed = 18;
+    const scrollLeftZone = document.getElementById('scrollLeftZone');
+    const scrollRightZone = document.getElementById('scrollRightZone');
+    function startScroll(dir) {
+      stopScroll();
+      scrollInterval = setInterval(() => {
+        cardRow.scrollLeft += dir * scrollSpeed;
+      }, 16);
+    }
+    function stopScroll() {
+      if (scrollInterval) clearInterval(scrollInterval);
+      scrollInterval = null;
+    }
+    scrollLeftZone.addEventListener('mouseenter', () => startScroll(-1));
+    scrollLeftZone.addEventListener('mouseleave', stopScroll);
+    scrollRightZone.addEventListener('mouseenter', () => startScroll(1));
+    scrollRightZone.addEventListener('mouseleave', stopScroll);
+
+    // Card flip/expand: only one at a time
+    function isTouchDevice() {
+      return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    }
+    function unflipAll() {
+      document.querySelectorAll('.card-inner.flipped').forEach(el => el.classList.remove('flipped'));
+    }
+    if (!isTouchDevice()) {
+      cardRow.addEventListener('mouseover', (e) => {
+        const card = e.target.closest('.card');
+        if (!card) return;
+        unflipAll();
+        const inner = card.querySelector('.card-inner');
+        if (inner) inner.classList.add('flipped');
+      });
+      cardRow.addEventListener('mouseout', (e) => {
+        const card = e.target.closest('.card');
+        if (!card) return;
+        const related = e.relatedTarget && e.relatedTarget.closest('.card');
+        if (related === card) return; // ignore moving within same card
+        const inner = card.querySelector('.card-inner');
+        if (inner) inner.classList.remove('flipped');
+      });
+    }
+
+    // Mobile: swipe to scroll, tap to flip
+    let touchStartX = 0;
+    let touchStartScroll = 0;
+    cardRow.addEventListener('touchstart', (e) => {
+      if (e.touches.length === 1) {
+        touchStartX = e.touches[0].clientX;
+        touchStartScroll = cardRow.scrollLeft;
+      }
+    });
+    cardRow.addEventListener('touchmove', (e) => {
+      if (e.touches.length === 1) {
+        const dx = e.touches[0].clientX - touchStartX;
+        cardRow.scrollLeft = touchStartScroll - dx;
+      }
+    });
+    cardRow.addEventListener('touchend', (e) => {
+      // No inertia for simplicity
+    });
+    cardRow.addEventListener('click', (e) => {
+      if (!isTouchDevice()) return;
+      const card = e.target.closest('.card');
+      if (!card) return;
+      unflipAll();
+      const inner = card.querySelector('.card-inner');
+      if (inner) inner.classList.add('flipped');
+    });
+    // On load, hide cards
+    cardRow.classList.add('hide');
+  </script>
+</body>
+</html>
